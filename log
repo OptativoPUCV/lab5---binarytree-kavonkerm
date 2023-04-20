@@ -59,3 +59,21 @@ Thu 20 Apr 2023 03:22:21 AM UTC:
  tests:  4|7
 total_score: 5/70
 1630ee3
+Thu 20 Apr 2023 03:58:03 AM UTC: 
+ treemap.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:5: error: ‘map’ undeclared (first use in this function)
+   76 |     map->current = nodo;
+      |     ^~~
+treemap.c:76:5: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:77:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   77 |     return nodo;
+      |            ^~~~
+treemap.c:82:10: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   82 |   return nodo;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4cfc77a
