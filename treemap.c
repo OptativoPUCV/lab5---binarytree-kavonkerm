@@ -6,7 +6,6 @@
 
 typedef struct TreeNode TreeNode;
 
-
 struct TreeNode {
     Pair* pair;
     TreeNode * left;
@@ -75,7 +74,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   TreeNode *nodo = tree->root;
   int aux = tree->lower_than(key,nodo->pair->key);
   if (aux == 0){
-    nodo->current = nodo->pair;
+    return nodo->pair;
   }
   if (aux < 0){
     nodo = nodo->left;
