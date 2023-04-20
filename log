@@ -376,3 +376,9 @@ treemap.c:76:16: error: invalid operands to binary != (have ‘TreeNode’ and �
       |          TreeNode
 Compilation failed
 08c5e46
+Thu 20 Apr 2023 04:55:08 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|7
+total_score: 5/70
+82b78e4
