@@ -406,3 +406,83 @@ Thu 20 Apr 2023 05:04:46 PM UTC:
  tests:  4|7
 total_score: 5/70
 e3802ed
+Thu 20 Apr 2023 05:08:17 PM UTC: 
+ treemap.c | 16 +++++++---------
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:3: error: expected ‘;’ before ‘while’
+   76 |   while (tree->current != NULL){
+      |   ^~~~~
+test.c: In function ‘creaPalabra’:
+test.c:47:17: error: implicit declaration of function ‘_strdup’; did you mean ‘strdup’? [-Werror=implicit-function-declaration]
+   47 |     new->word = _strdup(word);
+      |                 ^~~~~~~
+      |                 strdup
+test.c:47:15: error: assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   47 |     new->word = _strdup(word);
+      |               ^
+test.c: In function ‘search_test3’:
+test.c:143:17: error: ‘msg’ undeclared (first use in this function)
+  143 |         sprintf(msg, "encuentra dato con clave %d",key);
+      |                 ^~~
+test.c:143:17: note: each undeclared identifier is reported only once for each function it appears in
+test.c: In function ‘search_test4’:
+test.c:164:17: error: ‘msg’ undeclared (first use in this function)
+  164 |         sprintf(msg, "retorna NULL: search(key=%d)",key);
+      |                 ^~~
+test.c: In function ‘insert_test1’:
+test.c:174:35: error: passing argument 2 of ‘creaPalabra’ makes pointer from integer without a cast [-Werror=int-conversion]
+  174 |     Palabra* p = creaPalabra(1273,_strdup("repetido"));
+      |                                   ^~~~~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   int
+test.c:44:36: note: expected ‘char *’ but argument is of type ‘int’
+   44 | Palabra* creaPalabra(int id, char* word){
+      |                              ~~~~~~^~~~
+test.c: In function ‘insert_test2’:
+test.c:190:34: error: passing argument 2 of ‘creaPalabra’ makes pointer from integer without a cast [-Werror=int-conversion]
+  190 |     Palabra* p = creaPalabra(900,_strdup("maicol"));
+      |                                  ^~~~~~~~~~~~~~~~~
+      |                                  |
+      |                                  int
+test.c:44:36: note: expected ‘char *’ but argument is of type ‘int’
+   44 | Palabra* creaPalabra(int id, char* word){
+      |                              ~~~~~~^~~~
+test.c: In function ‘minimum_test’:
+test.c:233:17: error: ‘msg’ undeclared (first use in this function)
+  233 |         sprintf(msg,"minimum retorna nodo con clave %d (deberia retornar 1273)",*((int*) n->pair->key));
+      |                 ^~~
+test.c: In function ‘ub_test1’:
+test.c:435:17: error: ‘msg’ undeclared (first use in this function)
+  435 |         sprintf(msg,"upperbound de 6980 retorna %d",((Palabra*)aux->value)->id);
+      |                 ^~~
+test.c: In function ‘ub_test2’:
+test.c:450:17: error: ‘msg’ undeclared (first use in this function)
+  450 |         sprintf(msg,"upperbound de %d retorna NULL",j);
+      |                 ^~~
+test.c: In function ‘ub_test3’:
+test.c:471:17: error: ‘msg’ undeclared (first use in this function)
+  471 |         sprintf(msg,"upperbound de %d retorna NULL",j);
+      |                 ^~~
+test.c: In function ‘ub_test4’:
+test.c:492:17: error: ‘msg’ undeclared (first use in this function)
+  492 |         sprintf(msg,"upperbound de %d retorna NULL",j);
+      |                 ^~~
+test.c: In function ‘searchTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:606: error: control reaches end of non-void function [-Werror=return-type]
+  606 | }
+      | 
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9f330aa
