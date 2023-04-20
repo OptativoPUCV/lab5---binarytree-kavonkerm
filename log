@@ -500,3 +500,14 @@ treemap.c:86:3: error: expected expression before ‘}’ token
       |   ^
 Compilation failed
 86d406e
+Thu 20 Apr 2023 05:08:46 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:78:14: error: ‘nodo’ undeclared (first use in this function)
+   78 |       return nodo->pair;
+      |              ^~~~
+treemap.c:78:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+eba008e
