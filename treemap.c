@@ -82,7 +82,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   else{
     nodo = nodo->right;
   }
-  tree->current->pair = nodo->pair;
   return NULL;
 }
 
