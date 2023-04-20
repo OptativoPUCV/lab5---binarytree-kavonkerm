@@ -822,3 +822,12 @@ treemap.c:156:10: error: assignment to ‘TreeMap *’ from incompatible pointer
 cc1: all warnings being treated as errors
 Compilation failed
 fb93ec2
+Thu 20 Apr 2023 11:50:35 PM UTC: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c:120:1: error: expected identifier or ‘(’ before ‘}’ token
+  120 | }
+      | ^
+Compilation failed
+349177e
