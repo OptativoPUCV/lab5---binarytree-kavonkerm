@@ -263,3 +263,9 @@ treemap.c:77:18: error: ‘TreeNode’ has no member named ‘nodo’
       |                  ^~
 Compilation failed
 01155bb
+Thu 20 Apr 2023 04:36:30 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  5|7
+total_score: 5/70
+8e68985
