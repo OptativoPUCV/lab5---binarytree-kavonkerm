@@ -347,3 +347,14 @@ Thu 20 Apr 2023 04:53:02 PM UTC:
  tests:  6|7
 total_score: 5/70
 cb7a4f8
+Thu 20 Apr 2023 04:53:15 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:14: error: comparison between pointer and integer [-Werror]
+   76 |   while (aux != NULL){
+      |              ^~
+cc1: all warnings being treated as errors
+Compilation failed
+58d7eab
