@@ -49,7 +49,7 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
   if (searchTreeMap(tree,key) == NULL){
     TreeNode *nuevoNodo = (TreeNode *) malloc(sizeof(TreeNode));
-    tree->nuevoNodo = tree->root
+    tree->nuevoNodo = tree->root;
     tree->current = tree->nuevoNodo;
     if (tree->current->pair->key == tree->nuevoNodo->pair->key){
       return;
