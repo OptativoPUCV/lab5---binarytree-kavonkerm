@@ -77,3 +77,17 @@ treemap.c:82:10: error: returning ‘TreeNode *’ from a function with incompat
 cc1: all warnings being treated as errors
 Compilation failed
 4cfc77a
+Thu 20 Apr 2023 03:58:13 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:12: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   77 |     return nodo;
+      |            ^~~~
+treemap.c:82:10: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   82 |   return nodo;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1a0542c

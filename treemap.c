@@ -73,7 +73,7 @@ void eraseTreeMap(TreeMap * tree, void* key){
 Pair * searchTreeMap(TreeMap * tree, void* key) {
   TreeNode *nodo = (TreeNode *) malloc(sizeof(TreeNode));
   if (nodo->pair->key == nodo->pair->value){
-    map->current = nodo;
+    tree->current = nodo;
     return nodo;
   }
   else{
