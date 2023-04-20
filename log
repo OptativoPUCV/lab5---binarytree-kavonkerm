@@ -253,3 +253,13 @@ Thu 20 Apr 2023 04:32:38 PM UTC:
  tests:  5|7
 total_score: 5/70
 63080f6
+Thu 20 Apr 2023 04:35:05 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:18: error: ‘TreeNode’ has no member named ‘nodo’
+   77 |     tree->current->nodo = tree->current->pair;
+      |                  ^~
+Compilation failed
+01155bb
