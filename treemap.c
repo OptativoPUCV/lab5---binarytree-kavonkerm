@@ -76,7 +76,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   while (nodo != NULL){
     if (aux == 0){
       tree->current = nodo;
-      return nodo->pair;
+      return nodo->pair->key;
     }
     if (aux < 0){
       nodo = nodo->left;
