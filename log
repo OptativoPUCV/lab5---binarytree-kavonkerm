@@ -2,3 +2,21 @@ Thu 20 Apr 2023 03:00:02 AM UTC:
  tests:  1|8
 total_score: 0/70
 a7eae09
+Thu 20 Apr 2023 03:20:52 AM UTC: 
+ treemap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:40:19: error: ‘Treemap’ undeclared (first use in this function); did you mean ‘TreeMap’?
+   40 |   TreeMap *new = (Treemap *) malloc(sizeof(Treemap));
+      |                   ^~~~~~~
+      |                   TreeMap
+treemap.c:40:19: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:40:28: error: expected expression before ‘)’ token
+   40 |   TreeMap *new = (Treemap *) malloc(sizeof(Treemap));
+      |                            ^
+treemap.c:44:3: error: ‘map’ undeclared (first use in this function)
+   44 |   map->root = NULL;
+      |   ^~~
+Compilation failed
+b1a5d22
