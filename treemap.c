@@ -60,18 +60,20 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         TreeNode *new = createTreeNode(key,value);
         tree->current->right = new;
         new->parent = tree->current->right;
+        tree->current = tree->current->left;
         return;
       }
-      //tree->current = new;
+      tree->current = tree->current->left;
     }
     else{
       if (tree->current->left == NULL){
         TreeNode *new = createTreeNode(key,value);
         tree->current->left = new;
         new->parent = tree->current->left;
+        tree->current = tree->current->right
         return;
       }
-      //tree->current = new;
+      tree->current = tree->current->right;
     }
   }
 }
