@@ -70,7 +70,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         TreeNode *new = createTreeNode(key,value);
         tree->current->left = new;
         new->parent = tree->current->left;
-        tree->current = tree->current->right
+        tree->current = tree->current->right;
         return;
       }
       tree->current = tree->current->right;
