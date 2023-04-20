@@ -269,3 +269,14 @@ Thu 20 Apr 2023 04:36:30 PM UTC:
  tests:  5|7
 total_score: 5/70
 8e68985
+Thu 20 Apr 2023 04:37:07 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:19: error: assignment to ‘TreeNode *’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   77 |     tree->current = nodo->pair;
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+719da60
