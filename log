@@ -716,3 +716,9 @@ treemap.c:69:24: error: ‘TreeNode’ has no member named ‘ieft’; did you m
       |                        left
 Compilation failed
 b57c5c1
+Thu 20 Apr 2023 05:42:17 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|6
+total_score: 15/70
+e7e212a
