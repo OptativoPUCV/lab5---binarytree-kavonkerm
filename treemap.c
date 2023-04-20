@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "treemap.h"
+#include <stdbool.h>
 
 typedef struct TreeNode TreeNode;
 
