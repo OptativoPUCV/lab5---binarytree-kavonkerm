@@ -630,3 +630,18 @@ Thu 20 Apr 2023 05:30:01 PM UTC:
  tests:  11|6
 total_score: 15/70
 27f26c8
+Thu 20 Apr 2023 05:31:40 PM UTC: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:64:7: error: expected expression before ‘}’ token
+   64 |       }
+      |       ^
+treemap.c:64:7: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+treemap.c:49:6: note: declared here
+   49 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |      ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+09409cc
