@@ -47,3 +47,9 @@ treemap.c:40:43: error: ‘Treemap’ undeclared (first use in this function); d
 treemap.c:40:43: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f95717f
+Thu 20 Apr 2023 03:22:05 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|8
+total_score: 0/70
+b7e3efa
