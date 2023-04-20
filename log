@@ -523,3 +523,20 @@ Thu 20 Apr 2023 05:09:55 PM UTC:
  tests:  11|6
 total_score: 15/70
 b80b87c
+Thu 20 Apr 2023 05:16:44 PM UTC: 
+ treemap.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:52:25: error: ‘TreeMap’ has no member named ‘nuevoNodo’
+   52 |     tree->current = tree->nuevoNodo;
+      |                         ^~
+treemap.c:53:41: error: ‘TreeMap’ has no member named ‘nuevoNodo’
+   53 |     if (tree->current->pair->key == tree->nuevoNodo->pair->key){
+      |                                         ^~
+treemap.c:51:15: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+   51 |     TreeNode *nuevoNodo = (TreeNode *) malloc(sizeof(TreeNode));
+      |               ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+770db2b
