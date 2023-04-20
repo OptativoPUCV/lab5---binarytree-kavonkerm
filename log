@@ -663,3 +663,14 @@ Thu 20 Apr 2023 05:37:11 PM UTC:
  tests:  11|6
 total_score: 15/70
 c8900e7
+Thu 20 Apr 2023 05:37:37 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:65:23: error: ‘new’ undeclared (first use in this function)
+   65 |       tree->current = new;
+      |                       ^~~
+treemap.c:65:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2548c6d
