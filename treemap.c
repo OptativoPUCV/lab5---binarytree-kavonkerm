@@ -161,10 +161,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
       if (dato == NULL || tree->lower_than(node->pair->key,dato->key)){
         dato = node->pair;
       } 
-      node = node->right;
+      node = node->left;
     }
     else{
-      node = node->left;
+      node = node->right;
     }
   }
   return dato;
