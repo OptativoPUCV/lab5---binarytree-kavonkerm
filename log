@@ -1038,3 +1038,13 @@ Fri 21 Apr 2023 11:50:17 PM UTC:
  tests:  18|3
 total_score: 35/70
 4643a51
+Fri 21 Apr 2023 11:51:46 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:166:31: error: ‘TreeMap’ has no member named ‘comparador’
+  166 |       if (dato == NULL || tree->comparador(node->pair->key,dato->key) < 0){
+      |                               ^~
+Compilation failed
+15ce91d
