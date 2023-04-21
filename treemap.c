@@ -124,6 +124,11 @@ void removeNode(TreeMap * tree, TreeNode* node){
       hijoMen = NULL;
       free(node);
     }
+    else{
+      node->parent->right = hijoMen->right;
+      hijoMen = NULL;
+      free(node);
+    }
   }
 }
 
