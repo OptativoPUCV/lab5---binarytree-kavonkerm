@@ -117,12 +117,19 @@ void removeNode(TreeMap * tree, TreeNode* node){
       }
     }
   }
+  if (node->left != NULL && node->right != NULL){ //2 hijos
+    TreeNode *hijoMen = node->left
+    if (hijoMen->left == NULL && hijoMen->right == NULL){
+      node->parent->right = node->right;
+      node->parent->left = NULL;
+      free(node);
+    }
+  }
 }
 
 
 void eraseTreeMap(TreeMap * tree, void* key){
   if (tree == NULL || tree->root == NULL) return;
-
   if (searchTreeMap(tree, key) == NULL) return;
   TreeNode* node = tree->current;
   removeNode(tree, node);
@@ -146,7 +153,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 }
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+  return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
@@ -159,5 +166,5 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    return NULL;
+  return NULL;
 }

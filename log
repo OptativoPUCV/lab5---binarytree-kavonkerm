@@ -849,3 +849,15 @@ treemap.c:120:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 bf66fc4
+Fri 21 Apr 2023 10:29:18 PM UTC: 
+ treemap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+treemap.c:120:3: error: expected identifier or ‘(’ before ‘if’
+  120 |   if (node->left != NULL && node->right != NULL){ //2 hijos
+      |   ^~
+treemap.c:128:1: error: expected identifier or ‘(’ before ‘}’ token
+  128 | }
+      | ^
+Compilation failed
+4461e79
