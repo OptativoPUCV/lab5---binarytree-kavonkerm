@@ -155,7 +155,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* node = tree->root;
   while (node != NULL){
-    int comparador = tree->lower_than(key,node->key)
+    int comparador = tree->lower_than(key,node->key);
     if (comparador > 0){
       if (tree->current->pair == NULL || tree->lower_than(node->pair->key,tree->current->pair->key)){
         tree->current->pair = node->pair;
