@@ -915,3 +915,14 @@ treemap.c:159:42: error: too many arguments to function ‘tree->lower_than’
 cc1: all warnings being treated as errors
 Compilation failed
 4c170da
+Fri 21 Apr 2023 10:45:41 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:158:9: error: implicit declaration of function ‘is_lower’ [-Werror=implicit-function-declaration]
+  158 |     if (is_lower(tree,tree->current->pair->key,key)){
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f5be7f5
