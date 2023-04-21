@@ -146,17 +146,17 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
   return NULL;
 }
 
-
 Pair * upperBound(TreeMap * tree, void* key) {
     return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
   tree->current = tree->root;
+  if (tree->root == NULL) return NULL;
   while (tree->current->left != NULL){
     tree->current = tree->current->left;
   }
-    return tree->current->pair;
+  return tree->current->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
