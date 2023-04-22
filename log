@@ -1099,3 +1099,9 @@ treemap.c:166:31: error: ‘TreeMap’ has no member named ‘comparador’
       |                               ^~
 Compilation failed
 149db87
+Sat 22 Apr 2023 05:54:17 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  18|3
+total_score: 35/70
+95068bc
