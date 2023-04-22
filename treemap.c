@@ -163,7 +163,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   while (node != NULL){
     int comparador = tree->lower_than(key,node->pair->key);
     if (comparador < 0){
-      if (dato == NULL || tree->lower_than(node->pair->key,dato->key) < 0){
+      if (dato == NULL || comparador < 0){
         dato = node->pair;
       } 
       node = node->left;
