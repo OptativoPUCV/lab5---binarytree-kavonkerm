@@ -100,7 +100,7 @@ void removeNode(TreeMap * tree, TreeNode* node){
     }
     free(node);
   }
-  if (node->left == NULL || node->right == NULL){ //1 hijo
+  else if (node->left == NULL || node->right == NULL){ //1 hijo
     TreeNode *hijo;
     if (node->left != NULL) hijo = node->left;
     else hijo = node->right;
