@@ -105,7 +105,7 @@ void removeNode(TreeMap * tree, TreeNode* node){
     }
   }
   
-  if (node->left != NULL || node->right!= NULL){ //1 hijo
+  if (node->left == NULL || node->right == NULL){ //1 hijo
     if (node == node->parent->left){
       if (node->right > node->parent){
         node->parent->right = node->right;
@@ -161,8 +161,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode* node = tree->root;
   Pair *dato = tree->root->pair;
   while (node != NULL){
-    int lower_than = tree->lower_than(key,node->pair->key);
-    if (lower_than < 0){
+    int comparador = tree->lower_than(key,node->pair->key);
+    if (comparador < 0){
       if (dato == NULL || tree->lower_than(node->pair->key,dato->key)){
         dato = node->pair;
       } 
