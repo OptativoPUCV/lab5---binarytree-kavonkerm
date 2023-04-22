@@ -1076,3 +1076,16 @@ Sat 22 Apr 2023 05:51:28 PM UTC:
  tests:  18|3
 total_score: 35/70
 e35b1d6
+Sat 22 Apr 2023 05:53:00 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:166:27: error: called object ‘comparador’ is not a function or function pointer
+  166 |       if (dato == NULL || comparador(node->pair->key,dato->key) < 0){
+      |                           ^~~~~~~~~~
+treemap.c:164:9: note: declared here
+  164 |     int comparador = tree->lower_than(key,node->pair->key);
+      |         ^~~~~~~~~~
+Compilation failed
+4a5abdc
